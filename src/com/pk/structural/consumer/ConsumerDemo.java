@@ -13,10 +13,9 @@ public class ConsumerDemo {
          * The method will process the consumers in sequence.
          */
         c3.process("Hello Consumer");
-
         System.out.println("Processing with andThen Method definition.");
-
         Consumer<String> c4 = c1.andThen(c2);
         c4.process("Hello C4" );
     }
+
 }
